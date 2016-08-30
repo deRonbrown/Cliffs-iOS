@@ -1,0 +1,6 @@
+framework module Cliffs {
+  umbrella header "Cliffs-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,14 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'Cliffs_Example', :exclusive => true do
+  pod "Cliffs", :path => "../"
+  pod "Localytics", "~> 3.5"
+end
+
+target 'Cliffs_Tests', :exclusive => true do
+  pod "Cliffs", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end

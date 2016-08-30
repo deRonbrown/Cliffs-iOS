@@ -1,0 +1,6 @@
+framework module Pods_Cliffs_Example {
+  umbrella header "Pods-Cliffs_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
