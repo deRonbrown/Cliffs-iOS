@@ -30,7 +30,8 @@
     
     NSString *previousScreen = [Cliffs trackScreen:[self cf_screenName]];
     if ([self cf_isSimpleSummary] || self.cfTrackingSummary == nil || self.cfTrackingSummary.isReported) {
-        self.cfTrackingSummary = [self cf_createSummary:previousScreen];
+        self.cfTrackingSummary = [self cf_createSummary];
+        [self.cfTrackingSummary setPreviousScreen:previousScreen];
     }
 }
 
@@ -62,9 +63,10 @@
 }
 
 - (void)cf_appDidEnterForeground:(NSNotification *)notification {
-    NSString *lastScreen = [Cliffs trackScreen:[self cf_screenName]];
+    NSString *previousScreen = [Cliffs trackScreen:[self cf_screenName]];
     if ([self cf_isSimpleSummary] || self.cfTrackingSummary.isReported) {
-        self.cfTrackingSummary = [self cf_createSummary:lastScreen];
+        self.cfTrackingSummary = [self cf_createSummary];
+        [self.cfTrackingSummary setPreviousScreen:previousScreen];
     }
 }
 
@@ -82,7 +84,7 @@
                                  userInfo:nil];
 }
 
-- (CFTrackingSummary *)cf_createSummary:(NSString *)previousScreen {
+- (CFTrackingSummary *)cf_createSummary {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
                                    reason:[NSString stringWithFormat:@"You must override %@ in a subclass", NSStringFromSelector(_cmd)]
                                  userInfo:nil];

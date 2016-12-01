@@ -57,10 +57,8 @@
     return @"Second";
 }
 
-- (CFTrackingSummary *)cf_createSummary:(NSString *)previousScreen {
-    CFTrackingSummary *summary = [CFAnalyticsFacade getSecondSummary:self.startColor];
-    [summary setPreviousScreen:previousScreen];
-    return summary;
+- (CFTrackingSummary *)cf_createSummary {
+    return [CFAnalyticsFacade getSecondSummary:self.startColor];
 }
 
 @end

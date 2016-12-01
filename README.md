@@ -67,8 +67,8 @@ Each `CFUIViewController` subclass must override the following methods:
 #### `- (BOOL)cf_isSimpleSummary;`
 
 If this method returns `YES`, the summary event will be automatically tagged when
-the user leaves the view (i.e. `viewDidDisappear`) or when the users backgrounds the
-app. If the method return `NO`, you must make sure to report the summary event for
+the user leaves the view (i.e. `viewDidDisappear`) or when the user backgrounds the
+app. If the method returns `NO`, you must make sure to report the summary event for
 this `UIViewController` at an appropriate time in the future.
 
 #### `- (NSString *)cf_screenName;`

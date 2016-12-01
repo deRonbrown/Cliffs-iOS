@@ -33,10 +33,8 @@
     return @"Main";
 }
 
-- (CFTrackingSummary *)cf_createSummary:(NSString *)previousScreen {
-    CFTrackingSummary *summary = [CFAnalyticsFacade getMainSummary];
-    [summary setPreviousScreen:previousScreen];
-    return summary;
+- (CFTrackingSummary *)cf_createSummary {
+    return [CFAnalyticsFacade getMainSummary];
 }
 
 @end
