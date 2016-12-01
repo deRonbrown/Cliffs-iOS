@@ -75,11 +75,10 @@ this `UIViewController` at an appropriate time in the future.
 
 Return the screen name to be associated with this `UIViewController`.
 
-#### `- (CFTrackingSummary *)cf_createSummary:(NSString *)previousScreen;`
+#### `- (CFTrackingSummary *)cf_createSummary;`
 
 Create an instance of the `CFTrackingSummary` subclass associated with this
-`UIViewController`. The previous screen name is passed to set the "Previous Screen"
-attribute on the summary.
+`UIViewController`.
 
 ## Integration
 
