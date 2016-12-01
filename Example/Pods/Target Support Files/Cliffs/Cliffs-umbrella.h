@@ -1,5 +1,8 @@
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
+#endif
 
+#import "CFDefines.h"
 #import "CFInstance.h"
 #import "CFTimer.h"
 #import "CFTrackingSummary.h"

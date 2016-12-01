@@ -2,9 +2,12 @@
   "name": "Cliffs",
   "version": "0.1.0",
   "summary": "A short description of Cliffs.",
-  "description": "",
+  "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/<GITHUB_USERNAME>/Cliffs",
-  "license": "MIT",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
   "authors": {
     "DeRon Brown": "dmbrown2010@gmail.com"
   },
@@ -13,13 +16,7 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "7.0"
+    "ios": "8.0"
   },
-  "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
-  "resource_bundles": {
-    "Cliffs": [
-      "Pod/Assets/*.png"
-    ]
-  }
+  "source_files": "Cliffs/Classes/**/*"
 }

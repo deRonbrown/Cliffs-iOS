@@ -1,1 +1,1 @@
-../../../Localytics/Localytics-iOS-3.5.1/Localytics.h
+../../../Localytics/Localytics-iOS-3.8.0/Localytics.h

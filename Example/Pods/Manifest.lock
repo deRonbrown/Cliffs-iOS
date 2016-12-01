@@ -1,23 +1,19 @@
 PODS:
   - Cliffs (0.1.0)
-  - Expecta (1.0.5)
-  - Localytics (3.5.1)
-  - Specta (1.0.5)
+  - Localytics (3.8.0)
 
 DEPENDENCIES:
   - Cliffs (from `../`)
-  - Expecta
   - Localytics (~> 3.5)
-  - Specta
 
 EXTERNAL SOURCES:
   Cliffs:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Cliffs: 1caa5dcda228783a034072fe6917ca30935ebdcd
-  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
-  Localytics: da06c00606839b53978ca093adbca1d8afdeeb3e
-  Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
+  Cliffs: 5b267dac6e892435440e95d10f9550df51792a0c
+  Localytics: 8fd8455e92c5d5d507d1302e704e7db5ca2a33bf
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: b6c650d8ebc08a226992c88256cb4d02c2eb8bd9
+
+COCOAPODS: 1.1.1

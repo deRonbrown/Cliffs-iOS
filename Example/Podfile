@@ -1,14 +1,11 @@
-source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'Cliffs_Example', :exclusive => true do
-  pod "Cliffs", :path => "../"
+target 'Cliffs_Example' do
+  pod 'Cliffs', :path => '../'
   pod "Localytics", "~> 3.5"
-end
 
-target 'Cliffs_Tests', :exclusive => true do
-  pod "Cliffs", :path => "../"
-
-  pod 'Specta'
-  pod 'Expecta'
+  target 'Cliffs_Tests' do
+    inherit! :search_paths
+  end
+  
 end
